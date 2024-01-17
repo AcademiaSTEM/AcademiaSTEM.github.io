@@ -31,7 +31,7 @@ else:
     print('VUELVE A PREGUNTAR')
 ```
 
-#### Cachipun
+#### Cachipún
 
 Primero haremos un cachipún donde el computador donde siempre saca "piedra".
 ```python
@@ -94,3 +94,59 @@ elif mano_jugador == 'tijera':
     else:
         print('GANASTE')
 ``` 
+
+#### Contando con `while`
+
+En clases vimos cómo hacer un código que cuenta automáticamente hasta 5.
+```python
+i = 0
+
+while i > 5:
+    i = i + 1
+    print(i)
+    
+print('TERMINO')
+```
+
+Pero, ¿qué pasa si empezamos a hacerle ciertas modificaciones?
+* Si cambiamos el orden entre `i = i + 1` y `print(i)`, entonces ahora nuestro código contará desde el 0 hasta el 4.
+    ```python
+    i = 0
+
+    while i < 5:
+        i = i + 1
+        print(i)
+        
+    print('TERMINO')
+    ```
+
+* En cambio, si quitamos el `i = i + 1`, entonces ahora el código nunca terminará y siempre imprimirá `0`.
+    ```python
+    i = 0
+
+    while i < 5:
+        print(i)
+        
+    print('TERMINO')
+    ```
+
+* También podemos modificar la condición de forma que nuestro código nunca termine de ejecutarse.
+    ```python
+    i = 0
+
+    while True:
+        print(i)
+        
+    print('TERMINO')
+    ```
+
+* O hacer que el ciclo nunca se ejecute (Nótese que ahora es `1 > 5` y no `1 < 5`).
+
+    ```python
+    i = 0
+
+    while i > 5:
+        print(i)
+        
+    print('TERMINO')
+    ```
