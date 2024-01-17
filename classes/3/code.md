@@ -35,9 +35,6 @@ else:
 
 Primero haremos un cachipún donde el computador donde siempre saca "piedra".
 ```python
-
-from random import randint
-
 print('Hagamos un cachipun. Pon papel, piedra o tijera')
 
 mano_jugador = input('> ')
