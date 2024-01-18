@@ -114,8 +114,8 @@ Pero, ¿qué pasa si empezamos a hacerle ciertas modificaciones?
     i = 0
 
     while i < 5:
-        i = i + 1
         print(i)
+        i = i + 1
         
     print('TERMINO')
     ```
@@ -135,6 +135,7 @@ Pero, ¿qué pasa si empezamos a hacerle ciertas modificaciones?
     i = 0
 
     while True:
+        i = i + 1
         print(i)
         
     print('TERMINO')
@@ -146,6 +147,7 @@ Pero, ¿qué pasa si empezamos a hacerle ciertas modificaciones?
     i = 0
 
     while i > 5:
+        i = i + 1
         print(i)
         
     print('TERMINO')
