@@ -12,7 +12,7 @@
 
       <div class="col-12 sm:col-3 lg:col-2 p-3">
         <p>General</p>
-        <p><a href="academiastem.github.io/previous_versions">Versiones anteriores</a></p>
+        <p><a href="https://academiastem.github.io/previous_versions">Versiones anteriores</a></p>
       </div>
 
       <Divider layout="vertical" v-if="windowWidth >= 576" />

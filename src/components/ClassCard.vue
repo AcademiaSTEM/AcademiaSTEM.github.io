@@ -6,13 +6,14 @@
     <template #title>Clase {{ number }}</template>
     <template #subtitle>{{ title }}</template>
     <template #footer>
-      <Button
-        type="button"
-        label="Ver clase"
-        icon="pi pi-book"
-        @click="selectClass"
-        outlined
-      />
+      <RouterLink :to="classUrl">
+        <Button
+          type="button"
+          label="Ver clase"
+          icon="pi pi-book"
+          outlined
+        />
+      </RouterLink>
     </template>
   </Card>
 </template>
@@ -30,9 +31,11 @@ export default {
   },
   data(props) {
     const imageUrl = new URL(`../../public/classes/${props.info.link}/banner.jpg`, import.meta.url).href;
+    const classUrl = `/class/${props.info.link}`;
     return {
       ...props.info,
       imageUrl,
+      classUrl,
       style_option: {
         root: { class: 'flex flex-grow-1' },
         body: { class: 'flex flex-column', style: 'width: 100%' },
@@ -40,14 +43,6 @@ export default {
         footer: { class: 'inline-flex justify-content-center' },
       },
     };
-  },
-  methods: {
-    selectClass() {
-      router.push({
-        name: 'Class',
-        params: { id: this.link },
-      });
-    },
   },
 };
 </script>
