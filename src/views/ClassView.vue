@@ -7,9 +7,9 @@
       </header>
 
       <div v-if="pdf">
-      <Divider />
-      <h2>Presentación</h2>
-      <vue-pdf-app v-if="pdfFile" style="height: 500px;" :pdf="pdfFile" />
+        <Divider />
+        <h2>Presentación</h2>
+        <vue-pdf-app v-if="pdfFile" style="height: 500px;" :pdf="pdfFile" />
       </div>
 
       <Divider />
