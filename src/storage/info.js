@@ -21,6 +21,6 @@ export default [
     link: 3,
     number: 3,
     title: 'Aleatoriedad e instrucciones repetitivas',
-    pdf: 'Clase 3 - Aleatoriedad e instrucciones repetitivas',
+    pdf: 'Clase 3 - Aleatoriedad e instrucciones repetitivas.pdf',
   },
 ];
