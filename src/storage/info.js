@@ -11,4 +11,10 @@ export default [
     title: 'Algoritmos, datos y operadores',
     pdf: 'Clase 1 - Algoritmos, datos y operadores.pdf',
   },
+  {
+    link: 2,
+    number: 2,
+    title: 'Instrucciones condicionales',
+    pdf: 'Clase 2 - Instrucciones condicionales.pdf',
+  },
 ];
