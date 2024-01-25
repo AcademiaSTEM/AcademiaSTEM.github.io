@@ -2,7 +2,7 @@
 
 Utilizando el `for` para recorrer los caracteres de un texto, podemos identificar todas las palabras que este contiene. Lo importante, será utilizar una variables (`palabra`) para almacenar la información de la palabra que estamos revisando actualmente, una vez que encontremos un espacio o signo de puntuación, procederemos a mostrar la palabra que encontramos.
 
-````python
+```python
 texto = 'Hola mundo. Soy Pepa 🐢🌟'
 palabra = ''
 
