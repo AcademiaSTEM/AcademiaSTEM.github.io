@@ -30,8 +30,9 @@
         :info="info"
         :key="info.id"
         class="flex col-12 md:col-5" />
+        <ProjectCard class="flex col-12 md:col-5" />
         <div
-         v-if="(classes.length % 2) && (windowWidth >= 576)"
+         v-if="((classes.length + 1) % 2) && (windowWidth >= 576)"
          class="flex col-0 md:col-5 flex-grow-1"
         />
       </div>
@@ -46,12 +47,14 @@
 <script>
 import { useWindowSize } from '@vueuse/core';
 import ClassCard from '../components/ClassCard.vue';
+import ProjectCard from '../components/ProjectCard.vue';
 import info from '../storage/info';
 
 export default {
   name: 'MainView',
   components: {
     ClassCard,
+    ProjectCard,
   },
   data() {
     const { width } = useWindowSize();
