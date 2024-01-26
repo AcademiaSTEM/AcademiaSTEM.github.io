@@ -29,4 +29,10 @@ export default [
     title: 'Instrucciones repetitivas y más librerías',
     pdf: 'Clase 4 - Instrucciones repetitivas y más librerías.pdf',
   },
+  {
+    link: 5,
+    number: 5,
+    title: 'Cierre',
+    pdf: 'Clase 5 - Cierre.pdf',
+  },
 ];
