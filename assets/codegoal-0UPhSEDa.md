@@ -180,10 +180,4 @@ print ()
 time.sleep(1)
 print ("¡Y así finaliza este emocionante partido!")
 print ("muchisimas gracias por ser parte de esta transmision")
-
-
-
-#Por: Javiera Paz Correa Baeza
-#Proyecto: CodeGoal: Duelo de Fútbol,
-#Para: Feria conocimientos UC
 ```
