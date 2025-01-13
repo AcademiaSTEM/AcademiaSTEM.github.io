@@ -4,7 +4,7 @@
       <header>
         <h4>STEM UC: Academia para escolares</h4>
         <h1>Primeros pasos en programación</h1>
-        <p>Segunda semana, 2024</p>
+        <p>2025</p>
       </header>
 
       <Divider />
@@ -30,9 +30,9 @@
         :info="info"
         :key="info.id"
         class="flex col-12 md:col-5" />
-        <ProjectCard class="flex col-12 md:col-5" />
+        <!-- <ProjectCard class="flex col-12 md:col-5" /> -->
         <div
-         v-if="((classes.length + 1) % 2) && (windowWidth >= 576)"
+         v-if="((classes.length) % 2) && (windowWidth >= 576)"
          class="flex col-0 md:col-5 flex-grow-1"
         />
       </div>
