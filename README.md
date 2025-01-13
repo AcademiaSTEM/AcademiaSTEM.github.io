@@ -1,7 +1,47 @@
-# Vue 3 + Vite
+# Postulación Ayudantes
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+## Project Setup
 
-## Recommended IDE Setup
+```sh
+npm install
+```
 
-- [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+### Compile and Hot-Reload for Development
+
+```sh
+npm run dev
+```
+
+### Compile and Minify for Production
+
+```sh
+npm run build
+```
+
+### Lint with [ESLint](https://eslint.org/)
+
+```sh
+npm run lint
+```
+
+### Deploy on Github pages
+
+```sh
+npm run deploy
+```
+
+---
+
+Si al correr y poner los datos se muestra el mensaje:
+```
+remote: Support for password authentication was removed on August 13, 2021.
+```
+
+Entonces se requiere [crear una token](https://github.com/settings/tokens) para el deploy que se ingrese cuando se pida la contraseña (el usuario se mantiene igual).
+
+---
+
+Si hay problemas con el hot reload en wsl2, ejecutar lo siguiente en la consola:
+```sh
+export CHOKIDAR_USEPOLLING=true
+```
