@@ -108,3 +108,19 @@ Para aquellos que quieran practicar con la programación en bloques, les recomen
 * [🐦 La Hora del Código Chile: Condorito](https://www.horadelcodigo.cl/condorito/v2/juego/level1.html)
 * [⛏️ La Hora del Código Chile: Minecraft](https://studio.code.org/s/mc/lessons/1/levels/1?lang=es-MX)
 * [🕰️ La Hora del Código Chile: Más actividades](https://horadelcodigo.cl/tutoriales/)
+
+
+
+---
+
+## Código clase
+
+Preguntar por nombre y edad, para saludar e indicar cuantos días ha vivido el usuario:
+```python
+nombre = input('¿Cuál es tu nombre? ')
+print('Hola', nombre, '💖')
+
+edad = int(input('¿Cuántos años tienes? '))
+dias = edad * 365
+print('OH! Has vivido por lo menos', dias, 'días, yo solo he vivido 1.')
+```
