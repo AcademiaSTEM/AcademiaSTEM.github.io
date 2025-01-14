@@ -72,3 +72,28 @@ else:
     print('Inicio de sesión exitoso! 🐢')
 ```
 
+#### Operador de pertenencia (`in`)
+
+Este operador permite verificar si un elemento -en este caso un texto- está en un conjunto -otro texto-, lo cual retorna `True` si el elemento se encuentra en el conjunto y `False` en caso contrario. Esto funciona tanto para caracteres individuales, como _string_ completos:
+```python
+print('e' in 'pepa')
+print('u' in 'pepa')
+
+print('mayo' in 'ketchup, mayo, mostaza')
+print('ají' in 'ketchup, mayo, mostaza')
+```
+
+#### Transformar texto a mayúsculas y minúsculas
+
+En la gran mayoría de los lenguajes de programación se hace distinción entre los caracteres en mayúsculas y minúsculas, es por esto que es muy conveniente poder transformar los textos para no tener que preocuparnos por el uso de mayúsculas/minúsculas en un texto.
+
+Para esto se puede hacer uso de las funciones propias de _strings_:
+- `upper()`: transforma un texto a mayúsculas.
+- `lower()`: transforma un texto a minúsculas.
+```python
+texto = 'Todos sOMOs PePa LoveRs 🐢💖'
+print('Mayúsculas:', texto.upper())
+print('Minúsculas:', texto.lower())
+```
+
+---
