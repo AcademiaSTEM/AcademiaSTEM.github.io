@@ -1,3 +1,74 @@
+#### Contando con `while`
+
+En clases vimos cómo hacer un código que cuenta automáticamente hasta 5.
+```python
+i = 0
+
+while i > 5:
+    i = i + 1
+    print(i)
+    
+print('TERMINO')
+```
+
+Pero, ¿qué pasa si empezamos a hacerle ciertas modificaciones?
+* Si cambiamos el orden entre `i = i + 1` y `print(i)`, entonces ahora nuestro código contará desde el 0 hasta el 4.
+    ```python
+    i = 0
+
+    while i < 5:
+        print(i)
+        i = i + 1
+        
+    print('TERMINO')
+    ```
+
+* En cambio, si quitamos el `i = i + 1`, entonces ahora el código nunca terminará y siempre imprimirá `0`.
+    ```python
+    i = 0
+
+    while i < 5:
+        print(i)
+        
+    print('TERMINO')
+    ```
+
+* También podemos modificar la condición de forma que nuestro código nunca termine de ejecutarse.
+    ```python
+    i = 0
+
+    while True:
+        i = i + 1
+        print(i)
+        
+    print('TERMINO')
+    ```
+
+* O hacer que el ciclo nunca se ejecute (Nótese que ahora es `1 > 5` y no `1 < 5`).
+
+    ```python
+    i = 0
+
+    while i > 5:
+        i = i + 1
+        print(i)
+        
+    print('TERMINO')
+    ```
+
+#### Validar la respuesta del usuario
+
+Finalmente, vimos que utilizando `while`, podemos validar que el usuario nos entregue una respuesta dentro de un rango esperado, por ejemplo: las alternativas "a", "b", "c" y "d".
+```python
+respuesta = input('Indica tu respuesta (a, b, c, d): ')
+
+while not (respuesta == 'a' or respuesta == 'b' or respuesta == 'c' or respuesta == 'd'):
+    print('Debes ingresar: a, b, c, d')
+    respuesta = input('Indica tu respuesta (a, b, c, d): ')
+
+print('WIIIII 🚀')
+```
+
 #### Dado
 
 Utilizamos `randint` para obtener un número entero al alzar entre 1 y 6, inclusive.
@@ -100,74 +171,3 @@ elif mano_jugador == 'tijera':
     else:
         print('GANASTE')
 ``` 
-
-#### Contando con `while`
-
-En clases vimos cómo hacer un código que cuenta automáticamente hasta 5.
-```python
-i = 0
-
-while i > 5:
-    i = i + 1
-    print(i)
-    
-print('TERMINO')
-```
-
-Pero, ¿qué pasa si empezamos a hacerle ciertas modificaciones?
-* Si cambiamos el orden entre `i = i + 1` y `print(i)`, entonces ahora nuestro código contará desde el 0 hasta el 4.
-    ```python
-    i = 0
-
-    while i < 5:
-        print(i)
-        i = i + 1
-        
-    print('TERMINO')
-    ```
-
-* En cambio, si quitamos el `i = i + 1`, entonces ahora el código nunca terminará y siempre imprimirá `0`.
-    ```python
-    i = 0
-
-    while i < 5:
-        print(i)
-        
-    print('TERMINO')
-    ```
-
-* También podemos modificar la condición de forma que nuestro código nunca termine de ejecutarse.
-    ```python
-    i = 0
-
-    while True:
-        i = i + 1
-        print(i)
-        
-    print('TERMINO')
-    ```
-
-* O hacer que el ciclo nunca se ejecute (Nótese que ahora es `1 > 5` y no `1 < 5`).
-
-    ```python
-    i = 0
-
-    while i > 5:
-        i = i + 1
-        print(i)
-        
-    print('TERMINO')
-    ```
-
-#### Validar la respuesta del usuario
-
-Finalmente, vimos que utilizando `while`, podemos validar que el usuario nos entregue una respuesta dentro de un rango esperado, por ejemplo: las alternativas "a", "b", "c" y "d".
-```python
-respuesta = input('Indica tu respuesta (a, b, c, d): ')
-
-while not (respuesta == 'a' or respuesta == 'b' or respuesta == 'c' or respuesta == 'd'):
-    print('Debes ingresar: a, b, c, d')
-    respuesta = input('Indica tu respuesta (a, b, c, d): ')
-
-print('WIIIII 🚀')
-```
