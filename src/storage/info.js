@@ -23,12 +23,12 @@ export default [
     title: 'Instrucciones repetitivas y aleatoriedad',
     pdf: 'Clase 3 - Instrucciones repetitivas y aleatoriedad.pdf',
   },
-  // {
-  //   link: 4,
-  //   number: 4,
-  //   title: 'Instrucciones repetitivas y más librerías',
-  //   pdf: 'Clase 4 - Instrucciones repetitivas y más librerías.pdf',
-  // },
+  {
+    link: 4,
+    number: 4,
+    title: 'Instrucciones repetitivas y más librerías',
+    pdf: 'Clase 4 - Instrucciones repetitivas y más librerías.pdf',
+  },
   // {
   //   link: 5,
   //   number: 5,
