@@ -9,6 +9,17 @@
 
       <Divider />
       <h2>Donde programar</h2>
+      <Message severity="warn">
+        Dado que varios han tenido problemas con que se borre el código,
+        se recomienda:
+        <ul>
+          <li>Agregar una extensión que bloque la publicidad.</li>
+          <li>
+            Utilizar la siguiente página para programar:
+            <a href="https://codehs.com/sandbox/id/python-3-aiHGLS">CodeHS</a>
+          </li>
+        </ul>
+      </Message>
       <p>
         Como curso, queremos que puedas programar desde cualquier lugar,
         por lo que te invitamos a utilizar cualquiera de

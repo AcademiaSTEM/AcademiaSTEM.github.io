@@ -15,6 +15,7 @@ import Card from 'primevue/card';
 import Carousel from 'primevue/carousel';
 import Divider from 'primevue/divider';
 import Menubar from 'primevue/menubar';
+import Message from 'primevue/message';
 import TabView from 'primevue/tabview';
 import TabPanel from 'primevue/tabpanel';
 
@@ -42,6 +43,7 @@ app.component('Card', Card);
 app.component('Carousel', Carousel);
 app.component('Divider', Divider);
 app.component('Menubar', Menubar);
+app.component('Message', Message);
 app.component('TabView', TabView);
 app.component('TabPanel', TabPanel);
 app.component('VuePdfApp', VuePdfApp);
