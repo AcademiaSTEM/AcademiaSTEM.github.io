@@ -41,9 +41,9 @@
         :info="info"
         :key="info.id"
         class="flex col-12 md:col-5" />
-        <!-- <ProjectCard class="flex col-12 md:col-5" /> -->
+        <ProjectCard class="flex col-12 md:col-5" />
         <div
-         v-if="((classes.length) % 2) && (windowWidth >= 576)"
+         v-if="((classes.length + 1) % 2) && (windowWidth >= 576)"
          class="flex col-0 md:col-5 flex-grow-1"
         />
       </div>

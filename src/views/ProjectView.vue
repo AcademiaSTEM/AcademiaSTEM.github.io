@@ -10,7 +10,7 @@
       <div class='project'>
         <p>
           Acá encontrarán los proyectos realizados por los
-          estudiantes de la segunda versión del año 2024.
+          estudiantes del año 2025.
         </p>
         <p>
           Para ejecutarlos, deberán copiar el código y
