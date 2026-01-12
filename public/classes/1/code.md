@@ -18,6 +18,7 @@ Pero hay tener cuidado con las comillas, si no usamos las mismas para abrir y ce
 ```python
 print('Hola soy Perro 🐶")
 ```
+
 ```bash
 ERROR!
 File "<string>", line 1
@@ -29,11 +30,13 @@ SyntaxError: unterminated string literal (detected at line 1)
 #### Imprimir mensajes concatenados
 
 Podemos utilizar el `print` para concatenar distintos textos en un mismo mensaje.
+
 ```python
 print('Hola soy', 'Pepa 🐢')
 ```
 
 También se pueden concatenar números y otros tipos de valores.
+
 ```python
 print('Hoy es', 22, 'de enero')
 print('Hoy fue mi primera clase de programación:', True)
@@ -42,6 +45,7 @@ print('Hoy fue mi primera clase de programación:', True)
 #### Imprimir operaciones aritméticas
 
 Con `print` es posible imprimir el resultado de operaciones aritméticas o matemáticas.
+
 ```python
 print('2 y 2 son', 2 + 2)
 print('La pizza salió $', 20000 / 4, 'por persona')
@@ -51,6 +55,7 @@ print('El mejor juego de celular es', 2 ** 10)
 #### Recibir información del usuario
 
 Para hacer nuestros programas más dinámicos, le podemos pedir información al usuario con `input`.
+
 ```python
 lugar = ''
 lugar = input('¿De dónde eres?: ')
@@ -58,6 +63,7 @@ print('OH! Eres de', lugar, 'yo soy de Pepalandia 🚩')
 ```
 
 Pero la información entregada por `input` siempre será un _string_, por lo que será necesario hacer _casting_ para poder utilizarla como corresponde.
+
 ```python
 edad = 0
 edad = int(input("Dime tu edad: "))
@@ -67,6 +73,7 @@ print('Por lo menos has vivido', edad * 365, 'días')
 #### Revisar el tipo de dato
 
 Si alguna vez no están seguros sobre el tipo de algún dato, pueden usar la función `type` para verificarlo.
+
 ```python
 print(type(3 + 1.3))        # 3 + 1.3 = 4.3
 print(type('holo' * 3))     # 'holo' * 3 = 'holoholoholo'
@@ -79,48 +86,35 @@ print(type(True + True))    # True + True = 1 + 1 = 2
 Finalmente, no tengan miedo a probar lo que no saben. Aprovechen que pueden probar en un ambiente seguro y que no afectará sus computadores.
 
 Por ejemplo, cuando revisamos las operaciones aritméticas, no estábamos seguros de qué pasaría si aplicábamos una doble negación a un número.
+
 ```python
 print(--2)                  # 2
 ```
 
 En caso de un error, recuerden que los errores se deben leer desde abajo hacia arría.
+
 ```python
 print('10' + 1)
 ```
+
 ```bash
 ERROR!
 Traceback (most recent call last):
   File "<string>", line 1, in <module>
 TypeError: can only concatenate str (not "int") to str
 ```
+
 * Primero se nos indicará cuál fue el error: `TypeError: can only concatenate str (not "int") to str`
 * Después en qué parte del código sucedió: `line 1`
-
-
 
 ---
 
 ## Material adicional
 
 Para aquellos que quieran practicar con la programación en bloques, les recomendamos las siguientes páginas:
+
 * [🧩 Blockly](https://blockly.games/?lang=es)
 * [🥕 Coding for carrots](https://www.google.com/doodles/celebrating-50-years-of-kids-coding?doodle=32615474&platform=2&domain_name=google.com&hl=es)
 * [🐦 La Hora del Código Chile: Condorito](https://www.horadelcodigo.cl/condorito/v2/juego/level1.html)
 * [⛏️ La Hora del Código Chile: Minecraft](https://studio.code.org/s/mc/lessons/1/levels/1?lang=es-MX)
 * [🕰️ La Hora del Código Chile: Más actividades](https://horadelcodigo.cl/tutoriales/)
-
-
-
----
-
-## Código clase
-
-Preguntar por nombre y edad, para saludar e indicar cuantos días ha vivido el usuario:
-```python
-nombre = input('¿Cuál es tu nombre? ')
-print('Hola', nombre, '💖')
-
-edad = int(input('¿Cuántos años tienes? '))
-dias = edad * 365
-print('OH! Has vivido por lo menos', dias, 'días, yo solo he vivido 1.')
-```
