@@ -28,7 +28,7 @@
       </p>
       <ul>
         <li><a href="https://codehs.com/sandbox/id/python-3-aiHGLS">CodeHS</a></li>
-        <li><a href="https://replit.com/languages/online-python-compiler">Replit</a></li>
+        <li><a href="https://www.w3schools.com/python/trypython.asp?filename=demo_compiler">W3Schools</a></li>
       </ul>
 
       <Divider />
@@ -48,7 +48,7 @@
 
       <Divider />
       <h2>Resumen</h2>
-      <vue-pdf-app v-if="pdfFile" style="height: 500px;" :pdf="pdfFile" />
+      <PDFViewer :pdf-path="pdfPath" />
     </div>
   </div>
 </template>
@@ -57,6 +57,7 @@
 import { useWindowSize } from '@vueuse/core';
 import ClassCard from '../components/ClassCard.vue';
 import ProjectCard from '../components/ProjectCard.vue';
+import PDFViewer from '../components/PDFViewer.vue';
 import info from '../storage/info';
 
 export default {
@@ -64,15 +65,16 @@ export default {
   components: {
     ClassCard,
     ProjectCard,
+    PDFViewer,
   },
   data() {
     const { width } = useWindowSize();
     const googleIcon = new URL('../../public/googleIcon.png', import.meta.url).href;
-    const pdfFile = new URL('../../public/Resumen y ejemplos.pdf', import.meta.url).href;
+    const pdfPath = new URL('../../public/Resumen y ejemplos.pdf', import.meta.url).href;
     return {
+      pdfPath,
       classes: info,
       googleIcon,
-      pdfFile,
       windowWidth: width,
     };
   },

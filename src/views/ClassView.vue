@@ -9,7 +9,7 @@
       <div v-if="pdf">
         <Divider />
         <h2>Presentación</h2>
-        <vue-pdf-app v-if="pdfFile" style="height: 500px;" :pdf="pdfFile" />
+        <PDFViewer :pdf-path="pdfPath" />
       </div>
 
       <Divider />
@@ -26,11 +26,13 @@ import MarkdownIt from 'markdown-it';
 import info from '../storage/info';
 import highlight from '../utils/highlight';
 import Class2ExtraInformation from '../components/extras/2/Component.vue';
+import PDFViewer from '../components/PDFViewer.vue';
 
 export default {
   name: 'ClassView',
   components: {
     Class2ExtraInformation,
+    PDFViewer,
   },
   setup() {
     const markdown = new MarkdownIt({ highlight });
@@ -40,14 +42,14 @@ export default {
     const classInfo = info[this.$route.params.id];
     return {
       ...classInfo,
-      pdfFile: undefined,
+      pdfPath: undefined,
       mardkownContent: undefined,
     };
   },
   async created() {
     if (this.pdf) {
-      const pdfFile = new URL(`../../public/classes/${this.$route.params.id}/${this.pdf}`, import.meta.url).href;
-      this.pdfFile = pdfFile;
+      const pdfPath = new URL(`../../public/classes/${this.$route.params.id}/${this.pdf}`, import.meta.url).href;
+      this.pdfPath = pdfPath;
     }
     const mardkownFile = new URL(`../../public/classes/${this.$route.params.id}/code.md`, import.meta.url).href;
     const mardkownContent = await fetch(mardkownFile).then((r) => r.text());
