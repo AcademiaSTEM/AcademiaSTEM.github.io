@@ -4,22 +4,11 @@
       <header>
         <h4>STEM UC: Academia para escolares</h4>
         <h1>Primeros pasos en programación</h1>
-        <p>2025</p>
+        <p>2026</p>
       </header>
 
       <Divider />
       <h2>Donde programar</h2>
-      <Message severity="warn">
-        Dado que varios han tenido problemas con que se borre el código,
-        se recomienda:
-        <ul>
-          <li>Agregar una extensión que bloque la publicidad.</li>
-          <li>
-            Utilizar la siguiente página para programar:
-            <a href="https://codehs.com/sandbox/id/python-3-aiHGLS">CodeHS</a>
-          </li>
-        </ul>
-      </Message>
       <p>
         Como curso, queremos que puedas programar desde cualquier lugar,
         por lo que te invitamos a utilizar cualquiera de
@@ -32,6 +21,15 @@
           Python Online
         </a>
       </div>
+      <p>
+        <b>Ojo:</b> Dado que muchas de estas páginas presentan publicidad,
+        recomendamos instalar una extensión que bloque publicad
+        (p.ej. AdBlock, uBlock) o utilizar alguna de las siguientes páginas:
+      </p>
+      <ul>
+        <li><a href="https://codehs.com/sandbox/id/python-3-aiHGLS">CodeHS</a></li>
+        <li><a href="https://replit.com/languages/online-python-compiler">Replit</a></li>
+      </ul>
 
       <Divider />
       <h2>Clases</h2>
@@ -41,9 +39,9 @@
         :info="info"
         :key="info.id"
         class="flex col-12 md:col-5" />
-        <ProjectCard class="flex col-12 md:col-5" />
+        <!-- <ProjectCard class="flex col-12 md:col-5" /> -->
         <div
-         v-if="((classes.length + 1) % 2) && (windowWidth >= 576)"
+         v-if="((classes.length + 2) % 2) && (windowWidth >= 576)"
          class="flex col-0 md:col-5 flex-grow-1"
         />
       </div>
@@ -100,6 +98,7 @@ header {
   border-radius: 50vh;
   color: black;
   display: flex;
+  margin-bottom: 1em;
   width: 100%;
   box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
   img {
