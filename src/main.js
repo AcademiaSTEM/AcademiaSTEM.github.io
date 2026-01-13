@@ -16,8 +16,6 @@ import Carousel from 'primevue/carousel';
 import Divider from 'primevue/divider';
 import Menubar from 'primevue/menubar';
 import Message from 'primevue/message';
-import TabView from 'primevue/tabview';
-import TabPanel from 'primevue/tabpanel';
 
 import VuePdfApp from 'vue3-pdf-app';
 import 'vue3-pdf-app/dist/icons/main.css';
@@ -44,8 +42,6 @@ app.component('Carousel', Carousel);
 app.component('Divider', Divider);
 app.component('Menubar', Menubar);
 app.component('Message', Message);
-app.component('TabView', TabView);
-app.component('TabPanel', TabPanel);
 app.component('VuePdfApp', VuePdfApp);
 
 app.mount('#app');

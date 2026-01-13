@@ -3,40 +3,34 @@
   <div v-html="markdown.render(header)" />
 
   <h4><code>if</code></h4>
-  <TabView>
-    <TabPanel header="Código">
-      <div v-html="markdown.render(code_if)" />
-    </TabPanel>
-    <TabPanel header="Diagrama">
-      <div class="flex px-0 sm:px-5 md:px-8">
+  <Card>
+    <template #content>
+      <div class="flex align-items-start">
+        <div v-html="markdown.render(code_if)" class="code" />
         <img src="./if.png" />
       </div>
-    </TabPanel>
-  </TabView>
+    </template>
+  </Card>
 
   <h4><code>if/else</code></h4>
-  <TabView>
-    <TabPanel header="Código">
-      <div v-html="markdown.render(code_else)" />
-    </TabPanel>
-    <TabPanel header="Diagrama">
-      <div class="flex px-0 sm:px-5 md:px-8">
+  <Card>
+    <template #content>
+      <div class="flex align-items-start">
+        <div v-html="markdown.render(code_else)" class="code" />
         <img src="./else.png" />
       </div>
-    </TabPanel>
-  </TabView>
+    </template>
+  </Card>
 
   <h4><code>if/elif/else</code></h4>
-  <TabView>
-    <TabPanel header="Código">
-      <div v-html="markdown.render(code_elif)" />
-    </TabPanel>
-    <TabPanel header="Diagrama">
-      <div class="flex px-0 sm:px-5 md:px-8">
+  <Card>
+    <template #content>
+      <div class="flex align-items-start">
+        <div v-html="markdown.render(code_elif)" class="code" />
         <img src="./elif.png" />
       </div>
-    </TabPanel>
-  </TabView>
+    </template>
+  </Card>
 </template>
 
 <script>
@@ -105,6 +99,11 @@ else:
 
 <style lang="scss" scoped>
 img {
-  width: -webkit-fill-available;
+  width: 100%;
+  margin-top: 14px;
+  margin-left: 14px;
+}
+.code {
+  width: min-content;
 }
 </style>
