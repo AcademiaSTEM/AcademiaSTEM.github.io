@@ -28,7 +28,7 @@
       </p>
       <ul>
         <li><a href="https://codehs.com/sandbox/id/python-3-aiHGLS">CodeHS</a></li>
-        <li><a href="https://www.w3schools.com/python/trypython.asp?filename=demo_compiler">W3Schools</a></li>
+        <li><a href="https://trinket.io/embed/python3/a5bd54189b">Trinket</a></li>
       </ul>
 
       <Divider />
@@ -49,6 +49,22 @@
       <Divider />
       <h2>Resumen</h2>
       <PDFViewer :pdf-path="pdfPath" />
+
+      <Divider />
+      <h2>Desafíos Diarios</h2>
+      <p>
+        A petición de ustedes, les dejo un listado
+        de los desafíos que les he mostrado durante el curso:
+      </p>
+      <ul>
+        <li><a href="https://lapalabradeldia.com/">🔠 La Palabra del Día</a></li>
+        <li><a href="https://bandle.app/">🎶 Bandle (Canciones)</a></li>
+        <li><a href="https://worldle.teuteuf.fr/">🗺️ Worldle (Países)</a></li>
+        <li><a href="https://metazooa.com/play/game">🐢 Metazooa (Animales)</a></li>
+        <li><a href="https://squirdle.fireblend.com/">🥚 Squirdle (Pokémones)</a></li>
+        <li><a href="https://colorfle.com/">🎨 Colorfle (Colores)</a></li>
+        <li><a href="https://flagle-game.com/">🚩 Flagle (Banderas)</a></li>
+      </ul>
     </div>
   </div>
 </template>
