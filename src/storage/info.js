@@ -17,12 +17,12 @@ export default [
     title: 'Instrucciones condicionales',
     pdf: 'Clase 2 - Instrucciones condicionales.pdf',
   },
-  // {
-  //   link: 3,
-  //   number: 3,
-  //   title: 'Instrucciones repetitivas y aleatoriedad',
-  //   pdf: 'Clase 3 - Instrucciones repetitivas y aleatoriedad.pdf',
-  // },
+  {
+    link: 3,
+    number: 3,
+    title: 'Instrucciones repetitivas y aleatoriedad',
+    pdf: 'Clase 3 - Instrucciones repetitivas y aleatoriedad.pdf',
+  },
   // {
   //   link: 4,
   //   number: 4,
