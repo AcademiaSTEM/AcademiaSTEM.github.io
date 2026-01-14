@@ -53,18 +53,16 @@
       <Divider />
       <h2>Desafíos Diarios</h2>
       <p>
-        A petición de ustedes, les dejo un listado
-        de los desafíos que les he mostrado durante el curso:
+        A petición de ustedes, les dejamos un listado
+        de los desafíos que les hemos visto durante
+        la realización del taller:
       </p>
-      <ul>
-        <li><a href="https://lapalabradeldia.com/">🔠 La Palabra del Día</a></li>
-        <li><a href="https://bandle.app/">🎶 Bandle (Canciones)</a></li>
-        <li><a href="https://worldle.teuteuf.fr/">🗺️ Worldle (Países)</a></li>
-        <li><a href="https://metazooa.com/play/game">🐢 Metazooa (Animales)</a></li>
-        <li><a href="https://squirdle.fireblend.com/">🥚 Squirdle (Pokémones)</a></li>
-        <li><a href="https://colorfle.com/">🎨 Colorfle (Colores)</a></li>
-        <li><a href="https://flagle-game.com/">🚩 Flagle (Banderas)</a></li>
-      </ul>
+      <div class="flex justify-content-center flex-wrap gap-3">
+        <FancyButton v-for="info in dailyChallenges"
+        :info="info"
+        :key="info.id"
+        />
+      </div>
     </div>
   </div>
 </template>
@@ -72,23 +70,35 @@
 <script>
 import { useWindowSize } from '@vueuse/core';
 import ClassCard from '../components/ClassCard.vue';
-import ProjectCard from '../components/ProjectCard.vue';
+import FancyButton from '../components/FancyButton.vue';
 import PDFViewer from '../components/PDFViewer.vue';
+import ProjectCard from '../components/ProjectCard.vue';
 import info from '../storage/info';
 
 export default {
   name: 'MainView',
   components: {
     ClassCard,
-    ProjectCard,
+    FancyButton,
     PDFViewer,
+    ProjectCard,
   },
   data() {
     const { width } = useWindowSize();
     const googleIcon = new URL('../../public/googleIcon.png', import.meta.url).href;
     const pdfPath = new URL('../../public/Resumen y ejemplos.pdf', import.meta.url).href;
+    const dailyChallenges = [
+      { url: "https://lapalabradeldia.com/", emoji: "🔠", name: "La Palabra del Día", description: ""},
+      { url: "https://worldle.teuteuf.fr/", emoji: "🗺️", name: "Worldle", description: "Países"},
+      { url: "https://bandle.app/", emoji: "🎶", name: "Bandle", description: "Canciones"},
+      { url: "https://metazooa.com/play/game", emoji: "🐢", name: "Metazooa", description: "Animales"},
+      { url: "https://flagle-game.com/", emoji: "🚩", name: "Flagle", description: "Banderas"},
+      { url: "https://colorfle.com/", emoji: "🎨", name: "Colorfle", description: "Colores"},
+      { url: "https://squirdle.fireblend.com/", emoji: "🥚", name: "Squirdle", description: "Pokémones"},
+    ]
     return {
       pdfPath,
+      dailyChallenges,
       classes: info,
       googleIcon,
       windowWidth: width,
