@@ -88,14 +88,28 @@ export default {
     const googleIcon = new URL('../../public/googleIcon.png', import.meta.url).href;
     const pdfPath = new URL('../../public/Resumen y ejemplos.pdf', import.meta.url).href;
     const dailyChallenges = [
-      { url: "https://lapalabradeldia.com/", emoji: "🔠", name: "La Palabra del Día", description: ""},
-      { url: "https://worldle.teuteuf.fr/", emoji: "🗺️", name: "Worldle", description: "Países"},
-      { url: "https://bandle.app/", emoji: "🎶", name: "Bandle", description: "Canciones"},
-      { url: "https://metazooa.com/play/game", emoji: "🐢", name: "Metazooa", description: "Animales"},
-      { url: "https://flagle-game.com/", emoji: "🚩", name: "Flagle", description: "Banderas"},
-      { url: "https://colorfle.com/", emoji: "🎨", name: "Colorfle", description: "Colores"},
-      { url: "https://squirdle.fireblend.com/", emoji: "🥚", name: "Squirdle", description: "Pokémones"},
-    ]
+      {
+        url: 'https://lapalabradeldia.com/', emoji: '🔠', name: 'La Palabra del Día', description: '',
+      },
+      {
+        url: 'https://worldle.teuteuf.fr/', emoji: '🗺️', name: 'Worldle', description: 'Países',
+      },
+      {
+        url: 'https://bandle.app/', emoji: '🎶', name: 'Bandle', description: 'Canciones',
+      },
+      {
+        url: 'https://metazooa.com/play/game', emoji: '🐢', name: 'Metazooa', description: 'Animales',
+      },
+      {
+        url: 'https://flagle-game.com/', emoji: '🚩', name: 'Flagle', description: 'Banderas',
+      },
+      {
+        url: 'https://colorfle.com/', emoji: '🎨', name: 'Colorfle', description: 'Colores',
+      },
+      {
+        url: 'https://squirdle.fireblend.com/', emoji: '🥚', name: 'Squirdle', description: 'Pokémones',
+      },
+    ];
     return {
       pdfPath,
       dailyChallenges,

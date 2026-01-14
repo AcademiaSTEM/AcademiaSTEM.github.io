@@ -31,7 +31,6 @@ export default {
 };
 </script>
 
-
 <style scoped lang="scss">
 button {
   width: 250px !important;
