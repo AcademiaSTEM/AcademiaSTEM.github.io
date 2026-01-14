@@ -171,3 +171,56 @@ elif mano_jugador == 'tijera':
     else:
         print('GANASTE')
 ``` 
+
+---
+
+## Código clase
+
+#### Calcular Factorial
+
+* Versión 1
+    ```python
+    numero = 5
+    resultado = 1
+
+    while numero >= 1:
+        # Descomenta los prints para ver cómo se comporta el código en cada ciclo del while
+        # print('>', 'num', numero, 'res', resultado)
+        resultado = resultado * numero
+        numero = numero - 1
+        # print('<', 'num', numero, 'res', resultado)
+
+    print('Resultado:', resultado)
+    ```
+
+* Versión 2
+    ```python
+    numero = 5
+    resultado = 5
+
+    while numero > 1:
+        # Descomenta los prints para ver cómo se comporta el código en cada ciclo del while
+        # print('>', 'num', numero, 'res', resultado)
+        numero = numero - 1
+        resultado = resultado * numero
+        # print('<', 'num', numero, 'res', resultado)
+
+    print('Resultado:', resultado)
+    ```
+
+#### Tirar un dado hasta que el usuario quiera que termine
+```python
+import random
+
+tirar_dado = True
+caras = 3
+
+while tirar_dado:
+    dado = random.randint(1, caras)
+    print('Resultado', dado)
+
+    print('Ingresa solo Enter para continuar')
+    print('Ingresa algo y Enter para terminar')
+    # Recibimos el input del usuario y comprobamos si es vació o no.
+    tirar_dado = (input('> ') == '')
+```
