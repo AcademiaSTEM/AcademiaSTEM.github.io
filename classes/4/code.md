@@ -17,11 +17,12 @@ for carácter in texto:
 print(palabra)
 ```
 
-----
+---
 
-## Código clase
+## Código Clase
 
 #### Árbol de Navidad
+
 ```python
 alto = 5
 
