@@ -4,7 +4,7 @@
     <p>{{ autor }}</p>
     <div v-if="codeMd" v-html="markdown.render(codeMd)" />
     <p v-if="url">
-      <a href="url">{{ url }}</a>
+      <a :href="url">{{ url }}</a>
     </p>
   </div>
 </template>

@@ -10,7 +10,7 @@
       <div class='project'>
         <p>
           Acá encontrarán los proyectos realizados por los
-          estudiantes del año 2025.
+          estudiantes del año 2026.
         </p>
         <p>
           Para ejecutarlos, deberán copiar el código y
