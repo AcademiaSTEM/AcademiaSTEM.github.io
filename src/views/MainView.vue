@@ -63,6 +63,29 @@
         :key="info.id"
         />
       </div>
+
+      <Divider />
+      <h2>Fotos</h2>
+      <p>
+        Fotos tomadas el día de la última clase 🐢💕.
+        Si quieren compartir alguna foto, pueden mandármela a mi correo (<a href="mailto:daconcha@uc.cl">daconcha@uc.cl</a>).
+      </p>
+      <Carousel
+        :value="photos"
+        :numVisible="1"
+        :numScroll="1"
+        circular
+        :autoplayInterval="3000"
+        :orientation="windowWidth < 576 ? 'vertical' : 'horizontal'"
+        verticalViewPortHeight="225px"
+      >
+        <template #item="slotProps">
+          <div class="flex align-items-center justify-content-center">
+            <img :src="slotProps.data" class="w-12 shadow-2" />
+          </div>
+        </template>
+      </Carousel>
+
     </div>
   </div>
 </template>
@@ -116,9 +139,14 @@ export default {
         url: 'https://minecraftle.zachmanson.com/', emoji: '⛏️', name: 'Minecraftle', description: '',
       },
     ];
+    const photos = Array(2).fill().map((__, i) => {
+      const path = new URL(`../../public/photos/grupo_${i + 1}.jpg`, import.meta.url).href;
+      return path;
+    });
     return {
       pdfPath,
       dailyChallenges,
+      photos,
       classes: info,
       googleIcon,
       windowWidth: width,
