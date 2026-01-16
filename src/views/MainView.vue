@@ -109,6 +109,12 @@ export default {
       {
         url: 'https://squirdle.fireblend.com/', emoji: '🥚', name: 'Squirdle', description: 'Pokémones',
       },
+      {
+        url: 'https://chardle.com/game/fnaf', emoji: '🐻', name: 'Five Nights at Freddy\'s Wordle', description: '',
+      },
+      {
+        url: 'https://minecraftle.zachmanson.com/', emoji: '⛏️', name: 'Minecraftle', description: '',
+      },
     ];
     return {
       pdfPath,
