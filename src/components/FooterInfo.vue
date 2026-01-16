@@ -26,6 +26,8 @@
           <span><i class="pi pi-github" /></span> lily416
         </a></p>
       </div>
+
+      <img src="../../public/psyduck.gif" />
     </div>
   </div>
 </template>
@@ -47,7 +49,6 @@ export default {
 <style lang="scss" scoped>
 .footer {
   padding-top: 5rem;
-  padding-bottom: 1rem;
 }
 .footer_text + .footer_text {
   border-left: 3px solid rgb(0, 146, 247);
