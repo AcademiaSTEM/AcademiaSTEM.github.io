@@ -19,10 +19,29 @@ print(palabra)
 
 ---
 
-## Código Clase
+## Código clase
 
 #### Árbol de Navidad
+```python
+alto = 5
 
+# Construimos el árbol de navidad
+for i in range(alto):
+    ancho_espacios = alto - i 
+    ancho_árbol = i * 2 + 1
+    print(i, ' ' * ancho_espacios, '#' * ancho_árbol)
+
+# Construimos la base del árbol
+ancho_base = 1
+ancho_espacios = alto
+print('b', ' ' * ancho_espacios, '#' * ancho_base)
+```
+
+----
+
+## Código clase
+
+#### Árbol de Navidad
 ```python
 alto = 5
 
