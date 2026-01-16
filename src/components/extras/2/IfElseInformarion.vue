@@ -2,43 +2,21 @@
   <h2>Material adicional</h2>
   <div v-html="markdown.render(header)" />
 
-  <h4><code>if</code></h4>
-  <Card>
-    <template #content>
-      <div class="flex align-items-start">
-        <div v-html="markdown.render(code_if)" class="code" />
-        <img src="./if.png" />
-      </div>
-    </template>
-  </Card>
-
-  <h4><code>if/else</code></h4>
-  <Card>
-    <template #content>
-      <div class="flex align-items-start">
-        <div v-html="markdown.render(code_else)" class="code" />
-        <img src="./else.png" />
-      </div>
-    </template>
-  </Card>
-
-  <h4><code>if/elif/else</code></h4>
-  <Card>
-    <template #content>
-      <div class="flex align-items-start">
-        <div v-html="markdown.render(code_elif)" class="code" />
-        <img src="./elif.png" />
-      </div>
-    </template>
-  </Card>
+  <CodeImageCard title="if" :code="code_if" image="if.png" />
+  <CodeImageCard title="if/else" :code="code_else" image="else.png" />
+  <CodeImageCard title="if/elif/else" :code="code_elif" image="elif.png" />
 </template>
 
 <script>
 import MarkdownIt from 'markdown-it';
 import highlight from '../../../utils/highlight';
+import CodeImageCard from './CodeImageCard.vue';
 
 export default {
-  name: 'Class2ExtraInformation',
+  name: 'IfElseInformation',
+  components: {
+    CodeImageCard
+  },
   setup() {
     const markdown = new MarkdownIt({ highlight });
     return { markdown };

@@ -16,7 +16,7 @@
       <h2>Código</h2>
       <div v-if="mardkownContent" v-html="markdown.render(mardkownContent)" />
 
-      <Class2ExtraInformation v-if="link === 2" />
+      <IfElseInformation v-if="link === 2" />
     </div>
   </div>
 </template>
@@ -25,13 +25,13 @@
 import MarkdownIt from 'markdown-it';
 import info from '../storage/info';
 import highlight from '../utils/highlight';
-import Class2ExtraInformation from '../components/extras/2/Component.vue';
+import IfElseInformation from '../components/extras/2/IfElseInformarion.vue';
 import PDFViewer from '../components/PDFViewer.vue';
 
 export default {
   name: 'ClassView',
   components: {
-    Class2ExtraInformation,
+    IfElseInformation,
     PDFViewer,
   },
   setup() {
