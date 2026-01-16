@@ -2,9 +2,9 @@
   <h2>Material adicional</h2>
   <div v-html="markdown.render(header)" />
 
-  <CodeImageCard title="if" :code="code_if" image="./if.png" />
-  <CodeImageCard title="if/else" :code="code_else" image="./else.png" />
-  <CodeImageCard title="if/elif/else" :code="code_elif" image="./elif.png" />
+  <CodeImageCard title="if" :code="code_if" image="if.png" />
+  <CodeImageCard title="if/else" :code="code_else" image="else.png" />
+  <CodeImageCard title="if/elif/else" :code="code_elif" image="elif.png" />
 </template>
 
 <script>

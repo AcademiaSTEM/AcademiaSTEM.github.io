@@ -37,7 +37,7 @@ export default {
     return { markdown };
   },
   data(props) {
-    const imageUrl = new URL(`${props.image}`, import.meta.url).href;
+    const imageUrl = new URL(`../../../../public/classes/2/extra/${props.image}`, import.meta.url).href;
     return {
       imageUrl
     }
